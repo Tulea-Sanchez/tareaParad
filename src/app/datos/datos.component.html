@@ -1,0 +1,20 @@
+<body>
+  
+
+  <div class="container">
+    <h2>Datos de las Personas</h2>
+    <div *ngFor="let person of persons" class="datos-persona">
+      <p>Nombre: {{ person.firstName }}</p>
+      <p>Apellidos: {{ person.lastName }}</p>
+      <p>Edad: {{ person.age }}</p>
+    </div>
+    <button (click)="retrocederATarea()" class="button-volver">Volver a Tarea</button>
+  </div>
+  
+
+</body>
+
+
+
+
+

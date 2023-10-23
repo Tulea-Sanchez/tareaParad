@@ -1,0 +1,36 @@
+<body>
+
+<div class="container">
+    <form>
+      <div class="form-group">
+        <label for="firstName">NOMBRE</label>
+        <input required id="firstName" name="firstName" [(ngModel)]="firstName" (input)="validateNames()" maxlength="30" [ngClass]="{'green-shadow': isFirstNameValid(), 'red-shadow': !isFirstNameValid() && firstName.length > 0}">
+      </div>
+  
+      <div class="form-group">
+        <label for="lastName">APELLIDOS</label>
+        <input required id="lastName" name="lastName" [(ngModel)]="lastName" (input)="validateNames()" maxlength="55" [ngClass]="{'green-shadow': isLastNameValid(), 'red-shadow': !isLastNameValid() && lastName.length > 0}">
+      </div>
+
+  
+      <div class="form-group">
+        <label for="age">EDAD</label>
+        <button type="button" (click)="decrementAge()" class="red-button">-</button>
+        <input required type="number" id="age" name="age" [(ngModel)]="age" (input)="validateAge()" min="0">
+        <button type="button" (click)="incrementAge()" class="green-button">+</button>
+        <div class="age-message">
+            <p *ngIf="age >= 1 && age <= 17" class="yellow-text">Menor de edad</p>
+            <p *ngIf="age >= 18" class="green-text">Mayor de edad</p>
+        </div>
+    </div>
+      <div class="form-group">
+        <button type="button" (click)="enviarDatos()" class="blue-button">Enviar Datos</button>
+    </div>
+    
+    </form>
+    <div class="error-container" *ngIf="message">
+        <div class="alert">{{ message }}</div>
+    </div>
+  </div>
+  
+</body>

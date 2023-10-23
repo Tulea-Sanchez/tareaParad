@@ -1,0 +1,55 @@
+/* Estilos para el body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../../assets/img/typescript.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+/* Estilo para el contenedor de los datos de las personas */
+.container {
+    border: 1px solid #000; /* Agrega un borde */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10rem auto; /* Controla la distancia desde la parte superior y centra horizontalmente */
+    text-align: center; /* Centra el contenido horizontalmente */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Estilo para el título */
+  .container h2 {
+    text-align: center; /* Centra el título horizontalmente */
+    color: green; /* Color de texto amarillo */
+    font-size: 24px; /* Tamaño de fuente personalizado para el título */
+    margin-bottom: 20px; /* Espacio inferior para separar el título de los datos */
+  }
+  
+  /* Estilos para los textos de los datos de las personas */
+  .datos-persona p {
+    text-align: center;
+    color: black; /* Color de texto amarillo */
+    font-size: large;
+  }
+  
+  /* Agrega estilo al botón de "Volver a Tarea" */
+.button-volver {
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interior (arriba/abajo, izquierda/derecha) */
+  border: none; /* Quita el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo cuando se pasa el ratón sobre el botón */
+.button-volver:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}

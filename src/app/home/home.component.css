@@ -1,0 +1,19 @@
+.button-styled {
+    background-color: #1976D2; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Relleno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+    border-radius: 4px; /* Bordes redondeados */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: inline-block; /* Display inline-block */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    box-shadow: 3px 3px 5px 0px rgb(221, 0, 49); /* Sombra con el color especificado */
+}
+
+
+.button-styled:hover {
+    background-color: #1565C0; /* Color de fondo al pasar el ratón */
+}
